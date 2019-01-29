@@ -1,0 +1,43 @@
+{
+  "name": "nest-consul-example",
+  "version": "0.0.1",
+  "description": "Nest consul example",
+  "author": "Konstantin Vinogradov",
+  "license": "MIT",
+  "main": "src/main.ts",
+  "scripts": {
+    "start:first": "nodemon --exec cross-env APP_ID=node1 APP_PORT=3010 ts-node -- src/main.ts",
+    "start:second": "nodemon --exec cross-env APP_ID=node2 APP_PORT=3011 ts-node -- src/main.ts",
+    "start:third": "nodemon --exec cross-env APP_ID=node3 APP_PORT=3012 ts-node -- src/main.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vinks/nest-consul-example.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vinks/nest-consul-example/issues"
+  },
+  "homepage": "https://github.com/vinks/nest-consul-example",
+  "dependencies": {
+    "@nestjs/common": "^5.6.2",
+    "@nestjs/core": "^5.6.2",
+    "bluebird": "^3.5.3",
+    "nest-consul": "^2.5.2",
+    "nest-consul-loadbalance": "^3.4.0",
+    "nest-consul-service": "^2.8.0"
+  },
+  "devDependencies": {
+    "@types/node": "^7.0.41",
+    "cross-env": "^5.2.0",
+    "nodemon": "^1.18.9",
+    "reflect-metadata": "^0.1.13",
+    "rxjs": "^6.3.3",
+    "rxjs-compat": "^6.3.3",
+    "ts-loader": "^5.3.3",
+    "ts-node": "^7.0.1",
+    "tsconfig-paths": "^3.7.0",
+    "tslint": "^5.12.1",
+    "typescript": "^2.7.2",
+    "uuid": "^3.3.2"
+  }
+}
